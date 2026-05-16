@@ -1,35 +1,23 @@
-# 📊 Inventory Web Dashboard (Front-End)
+# 📦 Inventory Web Dashboard
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
-A modern, responsive, and high-performance Web Dashboard built to interface with the **[Go Cloud Inventory API](https://github.com/zonafirmann/go-cloud-inventory)**. Designed as the frontend layer of a robust microservice architecture.
+A modern, lightweight, and blazing-fast Web Dashboard built to interface directly with the **[Go Cloud Inventory API](https://github.com/zonafirmann/go-cloud-inventory)**. This frontend layer visualizes real-time product data and smart stock alerts using React and Vite.
 
-## 🚀 Overview
+## 🚀 Key Features
 
-This dashboard allows businesses to visually manage their inventory and process transactions in real-time. It seamlessly connects to our containerized Go backend to execute ACID-compliant checkouts and display AI-driven smart analytics.
+* **Real-Time Data Fetching:** Seamlessly connects to the Go microservice via RESTful endpoints.
+* **Smart UI Indicators:** Automatically highlights critical stock levels (e.g., items with stock <= 3 turn red and bold based on backend rule engines).
+* **CORS Handled:** Fully integrated with the backend's security headers for secure cross-origin resource sharing.
+* **Lightning Fast Build:** Powered by Vite for instant server start and optimized production builds.
 
-### 🔑 Key Features
-* **Real-time API Integration:** Fetches live product and transaction data from the Golang backend.
-* **Interactive UI:** Smooth user experience built with React and optimized by Vite.
-* **Smart Analytics View:** Visual representation of rule-based inventory alerts (Critical Stock / Overstock).
+## 🚦 Quick Start
 
-## 🛠️ Tech Stack
-* **Framework:** React 18
-* **Build Tool:** Vite
-* **HTTP Client:** Axios (for API communication)
-* **Styling:** CSS / Tailwind CSS (Planned)
+**Prerequisite:** Ensure the Go Cloud Inventory API is running locally via Docker on `localhost:8080`.
 
-## 🚦 Getting Started
-
-### Prerequisites
-* [Node.js](https://nodejs.org/) installed.
-* The [Go Cloud Inventory API](https://github.com/zonafirmann/go-cloud-inventory) must be running via Docker on `localhost:8080`.
-
-### Installation
-1. Clone this repository:
+1. Clone the repository:
    ```bash
    git clone [https://github.com/zonafirmann/inventory-web-dashboard.git](https://github.com/zonafirmann/inventory-web-dashboard.git)
-   cd inventory-web-dashboard
